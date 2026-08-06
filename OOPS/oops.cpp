@@ -2,12 +2,18 @@
 using namespace std;
 
 class Teacher{
+    
     private:
         // properties / attributes
         double salary;
 
     public:
         // properties / attributes
+        // non-parameterized constructor
+        
+        Teacher(){
+            dept = "CSE";
+    }
         string name;
         string dept;
         string subject;
@@ -44,14 +50,13 @@ class Account{
 
 int main(){
     Teacher t1;
-
     t1.name = "Riya";
-    t1.dept = "CSE";
+    // t1.dept = "Data Science";
     t1.subject = "OOPs";
     t1.salary_1(150000);
     // t1.salary = 50000; //now we cant access it
 
     cout << t1.name << endl;
-    cout << t1.salary_2() << endl;
+    cout << t1.dept << endl;
     return 0;    
 }
