@@ -20,6 +20,14 @@ class Teacher{
             this->subject = subject;
             this->salary = salary;
         }
+
+        Teacher(Teacher &t){
+            cout << "copy constructor called" << endl;
+            this->name = t.name;
+            this->dept = t.dept;
+            this->subject = t.subject;
+            this->salary = t.salary;
+        }
         string name;
         string dept;
         string subject;
